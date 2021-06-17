@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Velverly
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ReactJS Web Application for Velverly
 
 ## Available Scripts
 
