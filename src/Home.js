@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Homepage from "./component/homepage.mp4"
 import Twitter from "./component/social/twitter.png"
 import Instagram from "./component/social/ig.png"
@@ -37,7 +38,9 @@ function Home() {
   
         <div class="row">
           <div class="column_demo">
-            <img src={Demo} alt=""/>
+              <Link to="/demo">
+                <img src={Demo} alt="Demo"/>
+              </Link>
           </div>
           <div class="column_line">
             <img src={Line} alt=""/>
