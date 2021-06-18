@@ -52,3 +52,15 @@ img {
   width: 10%;
   margin-left: 4%;
 }
+
+.contain {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#c {
+   width: 100%;
+   height: 1200;
+   display: block;
+}
