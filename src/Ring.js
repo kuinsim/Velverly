@@ -11,43 +11,44 @@ export default function Model(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Camera" position={[0, 0, 0]} rotation={[0, 0, 0]}>
-        <PerspectiveCamera fov={20} near={0.1} far={100} />
+        <PerspectiveCamera fov={20} near={0.1} far={2000} />
       </group>
-      <group name="Sun" position={[1000, 500, 1000]} rotation={[-Math.PI / 2, 0, 0]}>
-        <pointLight intensity={10} />
+      <group name="Sun" position={[50, 50, 50]} rotation={[0, 0, 0]}>
+        <ambientLight intensity={.3} />
+        <directionalLight intensity={1.5} />
       </group>
-      <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} scale={[200, 200, 200]}>
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} scale={[180, 180, 180]}>
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_1.geometry} material={nodes.mesh_1.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_1.geometry} material={nodes.mesh_1.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_2.geometry} material={nodes.mesh_2.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_2.geometry} material={nodes.mesh_2.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_3.geometry} material={nodes.mesh_3.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_3.geometry} material={nodes.mesh_3.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_4.geometry} material={nodes.mesh_4.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_4.geometry} material={nodes.mesh_4.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_5.geometry} material={nodes.mesh_5.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_5.geometry} material={nodes.mesh_5.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_6.geometry} material={nodes.mesh_6.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_6.geometry} material={nodes.mesh_6.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_7.geometry} material={nodes.mesh_7.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_7.geometry} material={nodes.mesh_7.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
-      <mesh geometry={nodes.mesh_8.geometry} material={nodes.mesh_8.material} scale={[200, 200, 200]} >
-        <meshPhongMaterial color="rgb(255,215,0)" />
+      <mesh geometry={nodes.mesh_8.geometry} material={nodes.mesh_8.material} scale={[180, 180, 180]} >
+        <meshPhongMaterial color="rgb(170,169,173)" />
       </mesh>
       <mesh
         geometry={nodes.Diamond_Round.geometry}
         material={nodes.Diamond_Round.material}
-        position={[0, 0, 2.8]}
-        scale={[100, 100, 100]}
+        position={[0, 0, 2.68]}
+        scale={[90, 90, 90]}
       />
     </group>
   )
